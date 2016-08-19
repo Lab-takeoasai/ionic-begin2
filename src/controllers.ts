@@ -5,6 +5,7 @@ class DashCtrl {
 class ChatsCtrl {
   public chats;
   constructor(private Chats) {
+    "ngInject";
     this.chats = Chats.all();
   }
   public remove(chat) {
@@ -15,6 +16,7 @@ class ChatsCtrl {
 class ChatDetailCtrl {
   public chat;
   constructor($stateParams, Chats) {
+    "ngInject";
     this.chat = Chats.get($stateParams.chatId);
   }
 }
