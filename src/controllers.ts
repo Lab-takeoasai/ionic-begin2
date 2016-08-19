@@ -1,5 +1,6 @@
 class DashCtrl {
-  constructor() { }
+  public static $inject = ["$scope"];
+  constructor($scope) { }
 }
 
 class ChatsCtrl {
